@@ -20,11 +20,12 @@ Cleans files from directory on each files change
 
 Install in your webpack config file
 
-``` 
+ 
+  ```javascript
   plugins: [
     new WebpackCleanPlugin({
       src: path.resolve(__dirname, 'build'),
       clearAll: true,
     }),
   ...
-  ] ```
+  ]
