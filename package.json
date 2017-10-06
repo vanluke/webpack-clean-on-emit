@@ -1,0 +1,39 @@
+{
+  "name": "simple-webpack-clean-plugin",
+  "version": "0.0.1",
+  "description": "Webpack plugin, cleans directory on rebuild",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test node_modules/.bin/jest",
+    "prepublish": "npm run lint && npm test",
+    "lint": "node_modules/.bin/eslint '*.js'"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanluke/webpack-clean-on-emit.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Lukasz Gonciarz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vanluke/webpack-clean-on-emit/issues"
+  },
+  "homepage": "https://github.com/vanluke/webpack-clean-on-emit#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb-base": "^12.0.2",
+    "eslint-plugin-import": "^2.7.0",
+    "jest": "^21.2.1",
+    "regenerator-runtime": "^0.11.0"
+  }
+}
