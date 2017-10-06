@@ -38,7 +38,7 @@ function removeFilesFromDir(options) {
       return console.log('Empty directory');
     }
     filesNames.forEach((file) => {
-      if (options.clearAll || options.cleanCondition) {
+      if (options.clearAll || options.cleanCondition(file)) {
         fs.unlink(path.resolve(options.src, file));
         unlinked.push(file);
       }

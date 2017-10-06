@@ -1,6 +1,6 @@
 {
   "name": "simple-webpack-clean-plugin",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Webpack plugin, cleans directory on rebuild",
   "main": "index.js",
   "scripts": {

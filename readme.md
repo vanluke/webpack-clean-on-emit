@@ -9,7 +9,7 @@ Cleans files from directory on each files change
   ``` cleanAll ``` - indicates if all files should be removed from directory
 
   Optional
-  ``` cleanCondition ``` - function | regexp define condition on files removal
+  ``` cleanCondition ``` - function define condition on files removal
 
 
 ## Examples
